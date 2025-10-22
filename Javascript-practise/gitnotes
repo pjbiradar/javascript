@@ -1,0 +1,49 @@
+create a new branch from main
+
+# Start on main
+git checkout main
+
+# Create a new branch called 'feature1' from main
+git checkout -b feature1
+
+# Make changes, commit them
+git add .
+git commit -m "Add new feature"
+
+# Push the branch to GitHub
+git push -u origin feature1
+
+
+
+how to initialize git on local
+
+1) git init (This creates a .git folder inside your project — now your folder is a Git repository.)
+2) git status (You’ll see your files listed as untracked.)
+3) git add . (. means “add all files in this folder”.You can also add specific files: git add index.html script.js
+)
+4) git commit -m "Initial commit"
+5) Create a repository on GitHub
+
+Go to GitHub
+ → log in.
+
+Click New repository.
+
+Enter a name (e.g., my-project), leave Initialize with README unchecked.
+
+Click Create repository.
+
+You’ll see a page with commands to connect your local repo.
+
+6) Add the remote repository
+git remote add origin https://github.com/yourusername/my-project.git (origin is the default name for the remote)
+7) If your local branch is main:
+
+git branch -M main      # rename if needed
+git push -u origin main
+->-u sets upstream tracking so future pushes are simple:
+->git push
+
+8) git remote -v
+origin  https://github.com/yourusername/my-project.git (fetch)
+origin  https://github.com/yourusername/my-project.git (push)
